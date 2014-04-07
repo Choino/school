@@ -20,6 +20,14 @@ public class SymbolClass {
 		memberVariables.add(t);
 	}
 
+	public boolean hasParameter(SymbolVariable t) {
+		return memberVariables.contains(t);
+	}
+
+	public void defineParameter(SymbolVariable t) {
+		memberVariables.get(memberVariables.indexOf(t)).defined = true;
+	}
+
 	public void addMethod(SymbolMethod m) {
 		methods.add(m);
 	}

@@ -1,6 +1,7 @@
 package syntaxtree;
 import visitor.Visitor;
 import visitor.TypeVisitor;
+import visitor.SymbolTreeBuilder;
 
 public class MethodDecl {
   public Type t;
@@ -21,5 +22,9 @@ public class MethodDecl {
 
   public Type accept(TypeVisitor v) {
     return v.visit(this);
+  }
+  
+  public void accept(SymbolTreeBuilder v) {
+    v.visit(this);
   }
 }

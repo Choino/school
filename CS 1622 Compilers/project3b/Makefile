@@ -9,6 +9,9 @@ build: build_tools build_class
 
 it: build_class run
 
+clean:
+	rm *.class
+
 build_tools:
 	bin/jflex BestLexer.flex
 	java -jar $(JARPATH)/java-cup-11a.jar -interface -parser BestParser BestParser.cup

@@ -1,6 +1,7 @@
 package syntaxtree;
 
 import java.util.Vector;
+import visitor.SymbolTreeBuilder;
 
 public class ExpList {
    private Vector list;
@@ -20,4 +21,6 @@ public class ExpList {
    public int size() { 
       return list.size(); 
    }
+   
+
 }

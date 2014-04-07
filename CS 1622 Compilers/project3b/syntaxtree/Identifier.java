@@ -1,6 +1,7 @@
 package syntaxtree;
 import visitor.Visitor;
 import visitor.TypeVisitor;
+import visitor.SymbolTreeBuilder;
 
 public class Identifier {
   public String s;
@@ -19,5 +20,9 @@ public class Identifier {
 
   public String toString(){
     return s;
+  }
+  
+  public String accept(SymbolTreeBuilder v) {
+    return v.visit(this);
   }
 }

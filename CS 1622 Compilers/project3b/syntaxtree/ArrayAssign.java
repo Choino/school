@@ -1,6 +1,7 @@
 package syntaxtree;
 import visitor.Visitor;
 import visitor.TypeVisitor;
+import visitor.SymbolTreeBuilder;
 
 public class ArrayAssign extends Statement {
   public Identifier i;
@@ -18,5 +19,8 @@ public class ArrayAssign extends Statement {
     return v.visit(this);
   }
 
+  public void accept(SymbolTreeBuilder v) {
+    v.visit(this);
+  }
 }
 

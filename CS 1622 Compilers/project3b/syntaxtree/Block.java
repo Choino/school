@@ -1,6 +1,7 @@
 package syntaxtree;
 import visitor.Visitor;
 import visitor.TypeVisitor;
+import visitor.SymbolTreeBuilder;
 
 public class Block extends Statement {
   public StatementList sl;
@@ -15,6 +16,10 @@ public class Block extends Statement {
 
   public Type accept(TypeVisitor v) {
     return v.visit(this);
+  }
+  
+  public void accept(SymbolTreeBuilder v) {
+    v.visit(this);
   }
 }
 

@@ -1,6 +1,7 @@
 package syntaxtree;
 import visitor.Visitor;
 import visitor.TypeVisitor;
+import visitor.SymbolTreeBuilder;
 
 public class MainClass {
   public Identifier i1,i2;
@@ -16,6 +17,10 @@ public class MainClass {
 
   public Type accept(TypeVisitor v) {
     return v.visit(this);
+  }
+  
+  public void accept(SymbolTreeBuilder v) {
+    v.visit(this);
   }
 }
 

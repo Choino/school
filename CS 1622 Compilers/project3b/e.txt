@@ -12,15 +12,18 @@ class QS{
     
     int[] number ;
     int size ;
+    int size;
 
     // Invoke the Initialization, Sort and Printing
     // Methods
     public int Start(int sz){
 	int aux01 ;
+
 	aux01 = this.Init(sz);
 	aux01 = this.Print();
 	System.out.println(9999);
 	aux01 = size - 1 ;
+	
 	aux01 = this.Sort(0,aux01);
 	aux01 = this.Print();
 	return 0 ;
@@ -33,11 +36,12 @@ class QS{
 	int j ;
 	int nt;
 	int t ;
+	int t;
 	boolean cont01;
 	boolean cont02;
 	int aux03 ;
 	t = 0 ;
-	if (left < right){
+	if (cont01 && cont02){
 	    v = number[right] ;
 	    i = left - 1 ;
 	    j = right ;
@@ -58,6 +62,7 @@ class QS{
 		    else cont02 = true ;
 		}
 
+		steve = aux03;
 
 		t = number[i] ;
 		number[i] = number[j] ;
@@ -85,6 +90,9 @@ class QS{
 	    System.out.println(number[j]);
 	    j = j + 1 ;
 	}
+
+	System.out.println(number.length);
+
 	return 0 ;
     }
     

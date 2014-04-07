@@ -42,7 +42,7 @@ terminal Token MINUS, TIMES, EQUALS, SEMICOLON;
 terminal Token PRINTLN, WHILE, IF, LBRACE, RBRACE;
 terminal Token BOOLEAN, PUBLIC, RETURN, STATIC, VOID;
 terminal Token MAIN, STRING, EXTENDS, LENGTH, CLASS, ELSE;
-terminal Token INTLITERAL;  
+terminal Token INTLITERAL;
 terminal Token IDENTIFIER;
 
 non terminal Program Goal;

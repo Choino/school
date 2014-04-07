@@ -6,8 +6,9 @@ import syntaxtree.*;
 public class SymbolVariable {
 
 	String name;
-	Type type;
+	public Type type;
 	SymbolMethod parentMethod;
+	public boolean defined;
 
 	public SymbolVariable(String n, Type t) {
 		name = n;
@@ -25,5 +26,7 @@ public class SymbolVariable {
 	public boolean correctType(Type t) {
 		return type.equals(t);
 	}
+
+
 
 }

@@ -69,4 +69,33 @@ public class SymbolTable {
 		}
 	}
 
+	public boolean definedInCurrentScope(String n) {
+		boolean ans = false;
+
+
+		// pls
+		ArrayList<String> shitWePoppedOff = new ArrayList<String>();
+
+		// pop till we end the scope or find our thing we're looking for
+		String top = symbols.pop();
+		shitWePoppedOff.add(top);
+		while (!top.equals("#rekt")) {
+
+			if (top.equals(n)) {
+				ans = true;
+				break;
+			}
+			top = symbols.pop();
+			shitWePoppedOff.add(top);
+		}
+
+		// put the shit back on top
+		for (int i = 0; i < shitWePoppedOff.size(); i++) {
+			symbols.push(shitWePoppedOff.get(i));
+		}	
+
+
+		return ans;
+	}
+
 }

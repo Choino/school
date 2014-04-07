@@ -1,6 +1,7 @@
 package syntaxtree;
 import visitor.Visitor;
 import visitor.TypeVisitor;
+import visitor.SymbolTreeBuilder;
 
 public class ArrayLength extends Exp {
   public Exp e;
@@ -14,6 +15,10 @@ public class ArrayLength extends Exp {
   }
 
   public Type accept(TypeVisitor v) {
+    return v.visit(this);
+  }
+  
+  public String accept(SymbolTreeBuilder v) {
     return v.visit(this);
   }
 }

@@ -1,6 +1,7 @@
 package syntaxtree;
 
 import java.util.Vector;
+import visitor.SymbolTreeBuilder;
 
 public class StatementList {
    private Vector list;
@@ -20,4 +21,5 @@ public class StatementList {
    public int size() { 
       return list.size(); 
    }
+   
 }

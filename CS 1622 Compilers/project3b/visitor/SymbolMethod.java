@@ -25,6 +25,14 @@ public class SymbolMethod {
 		parameters.add(t);
 	}
 
+	public boolean hasParameter(SymbolVariable t) {
+		return parameters.contains(t);
+	}
+
+	public void defineParameter(SymbolVariable t) {
+		parameters.get((parameters.indexOf(t))).defined = true;
+	}
+
 	public void addParent(SymbolClass p) {
 		parent = p;
 	}
