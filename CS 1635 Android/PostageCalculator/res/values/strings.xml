@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Postage Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_title">USPS Postage Calculator!</string>
+    <string name="letters_title">Letter</string>
+    <string name="large_envelopes_titles">Large Envelope</string>
+    <string name="packages_titles">Package</string>
+    <string name="weight_hint">Enter range: (0 - 13)</string>
+    <string name="ounces">ounces</string>
+    <string name="calculate_text">Calculate!</string>
+    <string name="invalid_value">You must enter a value in the range 0-13 oz.</string>
+    <string name="invalid_title">Invalid range!</string>
+    <string name="calculate_success">Your answer lies below</string>
+    <string name="calculate_result">Your price is </string>
+    <string name="dollars"> dollars.</string>
+    <string name="letter_range">Sorry, the letter range is 0 to 3.5 oz.</string>
+    <string name="letters_1">Must be rectangular.</string>
+    <string name="letters_2">Minimum size is 5&quot; long x 3 1/2&quot; high x 0.007” thick.</string>
+    <string name="letters_3">Maximum size of 11 1/2&quot; long x 6 1/8&quot; high x 1/4” thick.</string>
+    <string name="letters_4">Maximum weight is 3.5 oz.</string>
+    <string name="letters_5">A letter will be charged a nonmachinable surcharge if it’s a square letter 5&quot; x 5&quot; or larger, it doesn’t bend easily, has clasps or similar closure devices, has an address parallel to the shorter dimension of the letter, is lumpy, or the length divided by height is less than 1.3 or more than 2.5.</string>
+    <string name="letters_6">There are restrictions for mailing restricted and hazardous materials.</string>
+    <string name="envelopes_1">Must be rectangular.</string>
+    <string name="envelopes_2">Minimum size is either more than 11 1/2″ long x 6 1/8″ high OR 1/4″ thick.</string>
+    <string name="envelopes_3">Maximum size is 15″ long x 12&quot; high x 3/4” thick.</string>
+    <string name="envelopes_4">Maximum weight of 13 oz.
+Maximum weight of 13 oz.</string>
+    <string name="envelopes_5">Large envelopes that exceed these dimensions will be charged package rates.</string>
+    <string name="envelopes_6">There are restrictions for mailing restricted and hazardous materials.</string>
+    <string name="packages_1">Maximum weight of 13 oz.</string>
+    <string name="packages_2">Up to 108″ in combined length and girth.
+Up to 108″ in combined length and girth.
+</string>
+    <string name="packages_3">There are restrictions for mailing restricted and hazardous materials.</string>
+    <string name="packages_4">With few exceptions, cigarettes and smokeless tobacco shipments cannot be mailed.</string>
+    <string name="rules_regs">Rules and Regulations</string>
+    <string name="letters">Letters</string>
+    <string name="envelopes">Envelopes</string>
+    <string name="packages">Packages</string>
+    <string name="back_button">Go back!</string>
+
+</resources>
