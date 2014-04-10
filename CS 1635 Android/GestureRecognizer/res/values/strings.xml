@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gesture Recognizer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="clear_string">Clear</string>
+    <string name="send_string">Send it Off!</string>
+    <string name="result_string">Result:</string>
+    <string name="spaces">    </string>
+    <string name="no_results">No results yet!</string>
+    <string name="save_string">Save</string>
+    <string name="successful_string">Successful Save!</string>
+    <string name="success_content_string">Your image was saved successfully as Picture </string>
+    <string name="load_string">Load</string>
+
+</resources>
